@@ -1,0 +1,18 @@
+###########
+# local
+##########
+spring:
+  profiles:
+    active: local
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xstl.seia.io:23306/chamomile?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&useSSL=false
+    username: avengers
+    password: avengers)^06
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
